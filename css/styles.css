@@ -215,6 +215,44 @@ body {
   color: var(--dark-color-font);
   text-decoration: none;
 }
+.links-style-nav-agencja {
+  color: var(--dark-color-font);
+  text-decoration: none;
+  position: relative;
+}
+.links-style-nav-agencja:after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 4px;
+  left: -5%;
+  bottom: -36px;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+}
+.links-style-nav-agencja:hover,
+.links-style-nav-agencja:focus {
+  color: var(--brand-color);
+}
+.links-style-nav-portfolio {
+  position: relative;
+  color: var(--dark-color-font);
+  text-decoration: none;
+}
+.links-style-nav-portfolio:hover,
+.links-style-nav-portfolio:focus {
+  color: var(--brand-color);
+}
+.links-style-nav-portfolio:after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 4px;
+  left: -5%;
+  bottom: -36px;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+}
 .links-style-footer {
   color: rgba(255, 255, 255, 0.6);
   font-style: Regular;
@@ -321,6 +359,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.header-border {
+  border-bottom: 1px solid #eeeeee;
+}
 .header-logo-navi {
   display: flex;
   align-items: center;
@@ -363,6 +404,28 @@ body {
 .foto-whatwedo {
   vertical-align: top;
 }
+.foto-whatwedo-list {
+  position: relative;
+}
+.foto-whatwedo-label {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  background-color: #2f303acc;
+}
+.foto-label-description {
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: auto;
+}
 .no-padding-top {
   padding-top: 0;
 }
@@ -374,7 +437,6 @@ body {
   line-height: 0.75;
 }
 .lorem-icons-box {
-  /* display: block; */
   line-height: 0.75;
   background-color: var(--button-color);
 }
@@ -528,12 +590,12 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   transition: transform 0.5s;
 }
 .is-hidden {
   transform: scale(0);
-}  
+}
 .modal {
   width: 528px;
   min-height: 581px;
