@@ -60,6 +60,13 @@ body {
 .figure-shadow:focus {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+.foto-portfolio-shadow {
+  box-shadow: none;
+}
+.foto-portfolio-shadow:hover,
+.foto-portfolio-shadow:focus {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
 .button-style-main {
   width: 200px;
   height: 50px;
@@ -389,6 +396,42 @@ body {
 .foto-ourteam {
   display: block;
 }
+.foto-portfolio {
+  display: block;
+}
+.overlay-box {
+  width: 370px;
+  height: 294px;
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(0%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-text {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  font-size: 18px;
+  padding: 50px 50px 25px 30px;
+}
+.overlay-box:hover .overlay {
+transform: translateY(-100%);
+}
+/* li:hover .overlay {
+  transform: translateY(-100%);
+} */
+.foto-portfolio-shadow:hover .overlay{
+  transform: translateY(-100%);
+}
 .logo-footer-position {
   padding-top: 60px;
   padding-bottom: 20px;
@@ -599,9 +642,15 @@ body {
 .modal {
   width: 528px;
   min-height: 581px;
-  background-color: beige;
+  background-color: var(--white);
   margin: auto;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+.modal-close-icon {
+  width: 11px;
+  position: relative;
+  top: 2px;
+  left: 1px;
 }
