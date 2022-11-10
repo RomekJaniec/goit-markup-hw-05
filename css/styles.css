@@ -36,6 +36,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   color: ver(--dark-color-font);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-font {
   font-family: Roboto;
@@ -217,15 +218,18 @@ body {
 .links-style {
   color: var(--less-dark-color-font);
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .links-style-nav {
   color: var(--dark-color-font);
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .links-style-nav-agencja {
   color: var(--dark-color-font);
   text-decoration: none;
   position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .links-style-nav-agencja:after {
   content: "";
@@ -245,6 +249,7 @@ body {
   position: relative;
   color: var(--dark-color-font);
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .links-style-nav-portfolio:hover,
 .links-style-nav-portfolio:focus {
@@ -265,6 +270,7 @@ body {
   font-style: Regular;
   padding-bottom: 9px;
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-style {
   text-decoration: none;
@@ -426,9 +432,6 @@ body {
 .overlay-box:hover .overlay {
 transform: translateY(-100%);
 }
-/* li:hover .overlay {
-  transform: translateY(-100%);
-} */
 .foto-portfolio-shadow:hover .overlay{
   transform: translateY(-100%);
 }
@@ -486,11 +489,11 @@ transform: translateY(-100%);
 .customer-icons {
   width: 175px;
   height: 92px;
-
   border: 1px solid #afb1bb;
   border-radius: 5%;
   fill: var(--icon-color);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icons:hover,
 .customer-icons:focus {
@@ -534,6 +537,7 @@ transform: translateY(-100%);
   margin-left: 12px;
   fill: var(--icon-color);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0, 0.2);
 }
 .social-icons-footer {
   display: block;
@@ -541,6 +545,7 @@ transform: translateY(-100%);
   margin-left: 12px;
   fill: var(--white);
   cursor: pointer;
+
 }
 .social-icon-list {
   display: flex;
@@ -555,6 +560,8 @@ transform: translateY(-100%);
   cursor: pointer;
   margin-top: 0;
   margin-bottom: 0;
+  background-color: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0, 0.2); 
 }
 .social-icon-circle-footer {
   width: 44px;
@@ -563,6 +570,7 @@ transform: translateY(-100%);
   margin-top: 0;
   margin-bottom: 0;
   background-color: rgb(255, 255, 255, 10%);
+  transition: 250ms cubic-bezier(0.4, 0, 0, 0.2);
   cursor: pointer;
 }
 .social-icon-circle:hover .social-icons {
@@ -634,7 +642,7 @@ transform: translateY(-100%);
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: transform 0.5s;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   transform: scale(0);
