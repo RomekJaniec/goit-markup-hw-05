@@ -237,7 +237,7 @@ body {
   width: 110%;
   height: 4px;
   left: -5%;
-  bottom: -36px;
+  bottom: -32px;
   background-color: var(--brand-color);
   border-radius: 2px;
 }
@@ -371,6 +371,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
 }
 .header-border {
   border-bottom: 1px solid #eeeeee;
